@@ -30,8 +30,13 @@
   <p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
   <p>+7 (812) 555-05-55</p>
   <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-  <button type="submit">Войти</button>
-  <button type="submit">Регистрация</button>
+  <label>
+    <input type="text" placeholder="Равшан Джамшутович">
+  </label>
+  <button type="button">Выход</button>
+
+  <a href="">Мои заказы</a>
+  <a href="">Личный кабинет</a>
     <nav>
       <ul>
         <li><a href="">Главная</a></li>
@@ -55,6 +60,8 @@
     <li>ПЕРФОРАТОРЫ</li>
   </ul>
 
+  <p>ПЕРФОРАТОРЫ</p>
+
   <section>
     <h2>Фильтр товаров</h2>
     <p>ФИЛЬТР:</p>
@@ -64,12 +71,16 @@
         <label>
           <input type="range" min="0" max="30000" step="1">
         </label>
-        <label>
-          <input type="text" name="min-price" id="min-price-field" value="0">
-        </label>
-        <label>
-          <input type="text" name="max-price" id="max-price-field" value="30000">
-        </label>
+        <p>
+         <label>
+           <input type="text" name="min-price" id="min-price-field" value="0">
+         </label>
+        </p>
+        <p>
+         <label>
+           <input type="text" name="max-price" id="max-price-field" value="30000">
+         </label>
+        </p>
       </fieldset>
       <fieldset>
         <legend>ПРОИЗВОДИТЕЛИ:</legend>
@@ -84,7 +95,7 @@
           </li>
           <li>
             <input type="checkbox" name="MAKITA" id="filter-MAKITA" checked>
-            <label for="filter-BOSCH">MAKITA</label>
+            <label for="filter-MAKITA">MAKITA</label>
           </li>
           <li>
             <input type="checkbox" name="DEWALT" id="filter-DEWALT">
@@ -100,11 +111,11 @@
         <legend>ПИТАНИЕ:</legend>
         <ul>
           <li>
-            <input type="radio" name="power" value="battery" id="filter-battery" checked>
+            <input type="radio" name="power" value="power-battery" id="filter-power-battery" checked>
             <label for="filter-battery">АККУМУЛЯТОРНЫЕ</label>
           </li>
           <li>
-            <input type="radio" name="power" value="battery" id="filter-battery">
+            <input type="radio" name="power" value="power-corded" id="filter-power-corded">
             <label for="filter-battery">СЕТЕВЫЕ</label>
           </li>
         </ul>
@@ -117,8 +128,8 @@
     <p>СОРТИРОВКА:</p>
       <ul>
         <li>ПО ЦЕНЕ</li>
-        <li>ПО ТИПУ<//<li>
-        <li>ПО ФУНКЦИОНАЛУ</li>
+        <li><a href="">ПО ТИПУ</a></li>
+        <li><a href="">ПО ФУНКЦИОНАЛУ</li>
       </ul>
     <button type="button">ВВЕРХ</button>
     <button type="button">ВНИЗ</button>
@@ -156,6 +167,8 @@
         </a>
             <p>30500 Р.</p>
             <button type="button">25500 Р.</button>
+            <p><button type="button">КУПИТЬ</button></p>
+            <p><button type="button">В ЗАКЛАДКИ</button></p>
       </li>
       <li>
         <a href="">
@@ -238,7 +251,7 @@
     Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
     В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </section>
-    
+
   </main>
 
   <footer>
@@ -267,14 +280,33 @@
     </div>
     <p>©2010-2019 Компания "Техномарт"<br>
       Все права защищены</p>
-    <img src="img/icons/icon-vk.svg" width="26" height="15"
-alt="Иконка Vkontakte">
-    <img src="img/icons/icon-fb.svg" width="12" height="22"
-alt="Иконка Facebook">
-    <img src="img/icons/icon-insta.svg" width="21" height="21"
-alt="Иконка Instagram">
-<p>Обратная связь:<br> mail@htmlacademy.ru</p>
-<p>Разработано -<br> htmlacademy.ru</p>
+  <section>
+    <h2>Социальные сети</h2>
+      <ul>
+        <li>
+          <a href="">
+            <img src="img/icons/icon-vk.svg" width="26" height="15" alt="Vkontakte">
+          </a>
+        </li>
+          <li>
+            <a href="">
+            <img src="img/icons/icon-fb.svg" width="12" height="22" alt="Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/icons/icon-insta.svg" width="21" height="21" alt="Instagram">
+          </a>
+        </li>
+      </ul>
+  </section>
+  <p>Обратная связь:<br>
+    <a href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+  </p>
+  <p>Разработано -<br>
+    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+  </p>
   </footer>
 
   <body>
+</html>
